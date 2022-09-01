@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "323902152114",
+    "firebase_url": "https://solicitudescompra-default-rtdb.firebaseio.com",
+    "project_id": "solicitudescompra",
+    "storage_bucket": "solicitudescompra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323902152114:android:77ef829e2d52ddba7118ab",
+        "android_client_info": {
+          "package_name": "com.casacru.casacruapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323902152114-0k2ocs0cetnlud5ptlmnf1q45lj3t6am.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqp7SXrlh1jPq1oQW7Fr5VGGsDKeMTCQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323902152114-0k2ocs0cetnlud5ptlmnf1q45lj3t6am.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323902152114:android:bc53441cd5f5f2fc7118ab",
+        "android_client_info": {
+          "package_name": "com.casacru.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323902152114-0k2ocs0cetnlud5ptlmnf1q45lj3t6am.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqp7SXrlh1jPq1oQW7Fr5VGGsDKeMTCQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323902152114-0k2ocs0cetnlud5ptlmnf1q45lj3t6am.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

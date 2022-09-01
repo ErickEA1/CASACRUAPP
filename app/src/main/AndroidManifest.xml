@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.casacru.casacruapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProductosCasaCru">
+        <activity
+            android:name=".Almacen.VendidosMensual"
+            android:exported="false" />
+        <activity
+            android:name=".Ventas.CostoVenta"
+            android:exported="false" />
+        <activity
+            android:name=".Ventas.ReporteDeVentasFechas"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Almacen.ReporteMaxMin"
+            android:exported="false" />
+        <activity
+            android:name=".Ventas.InicioVentas"
+            android:exported="false" />
+        <activity
+            android:name=".Ventas.ReporteDeVenta"
+            android:exported="false" />
+        <activity
+            android:name=".Almacen.ReportesInventarios"
+            android:exported="false" />
+        <activity
+            android:name=".Almacen.ListadoInventario"
+            android:exported="false" />
+        <activity
+            android:name=".Ajustes.Ajustes"
+            android:exported="false" />
+        <activity
+            android:name=".Ajustes.menuAjustes"
+            android:exported="false" />
+        <activity
+            android:name=".Almacen.ActualizarPrecios"
+            android:exported="false" />
+        <activity
+            android:name=".Almacen.Existencias"
+            android:exported="false" />
+        <activity
+            android:name=".Almacen.Inicio"
+            android:exported="false" />
+        <activity
+            android:name=".Almacen.InicioInventario"
+            android:exported="false" />
+        <activity
+            android:name=".Almacen.Inventarios"
+            android:exported="false" />
+        <activity
+            android:name=".Almacen.Segmentos_contables"
+            android:exported="false" />
+        <activity
+            android:name=".Almacen.Ubicaciones"
+            android:exported="false" />
+        <activity
+            android:name=".Compras.InicioCompras"
+            android:exported="false" />
+        <activity
+            android:name=".Compras.SolicitudDeCompra"
+            android:exported="false" />
+        <activity
+            android:name=".Compras.Solicitudes"
+            android:exported="false" />
+        <activity
+            android:name=".General.Home"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".General.ListadoProductos"
+            android:exported="false" />
+    </application>
+
+</manifest>

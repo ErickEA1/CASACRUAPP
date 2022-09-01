@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Almacen.Ubicaciones">
+
+    <TextView
+        android:id="@+id/TXTIDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ToolbarColoredBlackArrow"
+        app:popupTheme="@style/Theme.ProductosCasaCru"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnInicio1"
+                android:layout_width="98dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/abc_vector_test"
+                android:onClick="inicio"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnEsc"
+                android:layout_width="248dp"
+                android:layout_height="109dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+
+                android:background="@drawable/escaner" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="146dp">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="71dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="39dp"
+                    android:layout_toEndOf="@+id/txtCodigo"
+                    android:layout_toRightOf="@+id/txtCodigo"
+                    android:background="@drawable/img"
+                    android:fontFamily="sans-serif-black"
+                    android:text="BUSCAR"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/txtCodigo"
+                    android:layout_width="222dp"
+                    android:layout_height="81dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="34dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_nombrep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="38sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <Spinner
+                    android:id="@+id/SpinnerProvee"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                   android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="visible"
+                    android:background="@drawable/style_spinner"
+                    tools:listitem="@layout/item_class"
+                    android:textSize="20sp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    android:hint="PASILLO ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_pasillo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_margin="15dp"
+                        android:textSize="40sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    android:hint="ANAQUEL">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_anaquel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_margin="15dp"
+                        android:textSize="40sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    android:hint="ZONA">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_zona"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_margin="15dp"
+                        android:textSize="40sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnMaxMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@color/verdeagua"
+                android:drawableRight="@android:drawable/ic_input_add"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Máximos y Mínimos"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtMinimo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Mínimo"
+                    android:inputType="textPersonName"
+                    android:textSize="45sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/txtMaximo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Máximo"
+                    android:inputType="textPersonName"
+                    android:textSize="45sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnclass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/verdeagua"
+                android:drawableRight="@android:drawable/ic_input_add"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Clasificaciones"
+                android:textColor="#fff"
+                android:textSize="28dp" />
+
+
+                <Spinner
+                    android:id="@+id/SpinnerClass1"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="visible"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/style_spinner"
+                    tools:listitem="@layout/item_class"
+                    android:textSize="20sp"/>
+
+
+                <Spinner
+                    android:id="@+id/SpinnerClass2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/style_spinner"
+                    tools:listitem="@layout/item_class"
+                    android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/txtClasificacion3"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/style_spinner"
+                tools:listitem="@layout/item_class"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/txtClasificacion4"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/style_spinner"
+                tools:listitem="@layout/item_class"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/txtClasificacion6"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/style_spinner"
+                tools:listitem="@layout/item_class"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="248dp"
+                android:layout_height="102dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ovalo"
+                android:fontFamily="sans-serif-black"
+                android:onClick="ActualizarInformacion"
+                android:text="ACTUALIZAR"
+                android:textColor="#710E0E"
+                android:textSize="30sp"
+                android:layout_marginBottom="60dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

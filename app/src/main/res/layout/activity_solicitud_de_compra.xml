@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Compras.SolicitudDeCompra">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ToolbarColoredBlackArrow"
+        app:popupTheme="@style/Theme.ProductosCasaCru"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnEscanear"
+                android:layout_width="248dp"
+                android:layout_height="109dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/escaner" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="146dp">
+
+                <Button
+                    android:id="@+id/btnBusca2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="71dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="39dp"
+                    android:layout_toEndOf="@+id/txtCod"
+                    android:layout_toRightOf="@+id/txtCod"
+                    android:background="@drawable/img"
+                    android:fontFamily="sans-serif-black"
+                    android:text="BUSCAR"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/txtCod"
+                    android:layout_width="222dp"
+                    android:layout_height="81dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="34dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LyDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DESCRIPCIÓN"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textNomPro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        android:layout_margin="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CANTIDAD"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtCantidad"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="50dp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textSize="25sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="UNIDAD"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtunidadmedida"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:inputType="textPersonName"
+                        android:textSize="25sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnGuardar"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/button_almc"
+                    android:text="Guardar"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-black"
+                    />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listaprod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

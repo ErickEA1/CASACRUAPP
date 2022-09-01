@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/txtTienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:text="Tienda"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/txtCosto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Costo"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/txtVenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Venta"
+        android:layout_margin="15dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/txtdiferencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:text="Diferencia"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/txtdiferenciaporc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:textAlignment="center"/>
+
+</LinearLayout>

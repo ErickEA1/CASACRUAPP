@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    tools:context=".Ajustes.Ajustes">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ToolbarColoredBlackArrow"
+        app:popupTheme="@style/Theme.ProductosCasaCru"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                  <RadioButton
+                        android:id="@+id/radioButtonDengui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dengui"
+                      android:textColor="@color/black"
+                      android:fontFamily="sans-serif-black"
+                      android:textSize="18sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtonLagunas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lagunas"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="18sp"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButton61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tienda el 61"
+                            android:textColor="@color/black"
+                            android:fontFamily="sans-serif-black"
+                            android:textSize="18sp"/>
+
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMatiasR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Santo Domingo"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="18sp"/>
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ParamDengui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtipn"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="9"
+                android:background="@drawable/edt_style"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="IP Servidor"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#9C9C9C"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtpuerto1"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="9"
+                android:background="@drawable/edt_style"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Puerto: 50646"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#9C9C9C"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="9"
+                android:background="@drawable/edt_style"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Usuario"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#9C9C9C"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="9"
+                android:background="@drawable/edt_style"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Ejemplo: COMPAC01$"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#9C9C9C"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtDB"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="9"
+                android:background="@drawable/edt_style"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Base de Datos"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#9C9C9C"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/idAlmacen"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="9"
+                android:background="@drawable/edt_style"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:visibility="gone"
+                android:gravity="center"
+                android:hint="ID almacen"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#9C9C9C" />
+
+            <Button
+                android:id="@+id/btnNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ovalo"
+                android:text="OK"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    tools:context=".Compras.Solicitudes">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ToolbarColoredBlackArrow"
+        app:popupTheme="@style/Theme.ProductosCasaCru"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints">
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/RGAlmacenes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbtxtAlDengui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ALMACEN DENGUI"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/rbtxtDengui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TIENDA DENGUI"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/rbtxtNopala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TIENDA NOPALA"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/tbtxt61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TIENDA 61"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/rbtxtlagunas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LAGUNAS OAXACA"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/rbtxtsd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SANTO DOMINGO"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/rbtxtmr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIENDA MATIAS ROMERO"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"/>
+
+    </RadioGroup>
+        <Button
+            android:id="@+id/btnfiltro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Guardar"
+            android:layout_margin="50dp"
+            android:background="@drawable/button_op2"/>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#930707">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:id="@+id/TXs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="SURTIDO"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TXTCODIGO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="CÓDIGO"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TXTDESCRIPCION"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="DESCRIPCION"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TXTCANTIDAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="CANTIDAD"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/TXTUM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="UNIDAD"
+                    android:textColor="@color/white" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listaprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_vent"
+                android:fontFamily="sans-serif-black"
+                android:text="GUARDAR"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
